@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <style> 
+        body{ 
+            background-color:#1B03A3; 
+            color: wheat; 
+            font-weight: 900; 
+        } 
+        h1{ 
+            font-size: 3em; 
+            color:  #cce1f6; 
+            text-decoration: underline; 
+        } 
+        form{ 
+            padding: 20px 110px; 
+            margin: 50px 25em ; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="container "> 
+        <h1 class="text-center mt-5 ">Registratioin Form</h1> 
+    <form method="POST" action="/update/<%= students._id %>" class="border border-warning pl-5"> 
+        <label>Name</label><br> 
+        <input type="text" value="<%= students.name %>" name="name" class="mb-3"/><br> 
+        <label>Email</label><br> 
+        <input type="email" value="<%= students.email %>" name="mail" class="mb-3" /><br> 
+        <label>Age</label><br> 
+        <input type="text" value="<%= students.ages %>" name="age" class="mb-3" /><br><br> 
+        <button  class="btn btn-secondary btn-lg btn-block">Register</button> 
+    </form> 
+</div> 
+</body> 
+</html>
